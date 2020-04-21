@@ -23,7 +23,7 @@ def _main():
     anchors = get_anchors(anchors_path)
 
     input_shape = (416,416) # multiple of 32, hw
-
+    #is it important
     is_tiny_version = len(anchors)==6 # default setting
     if is_tiny_version:
         model = create_tiny_model(input_shape, anchors, num_classes,
